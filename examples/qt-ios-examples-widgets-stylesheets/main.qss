@@ -1,0 +1,43 @@
+/* main.qss ---
+;; 
+;; Author: Julien Wintz
+;; Created: Mon Mar 11 11:30:52 2013 (+0100)
+;; Version: 
+;; Last-Updated: Mon Mar 11 11:58:00 2013 (+0100)
+;;           By: Julien Wintz
+;;     Update #: 36
+*/
+
+/* Change Log:
+;; 
+*/
+
+/* ******************************************************************/
+
+QFrame {
+  background-image: url(":qtios/img/frame-background.png");
+}
+
+/* ******************************************************************/
+
+QLineEdit {
+  background: #222222;
+  border: 1px solid #1c1c1c;
+  border-radius: 2px;
+  font-family: "Menlo";
+  color: #808080;
+}
+
+/* ******************************************************************/
+
+QPushButton {
+  background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #505050, stop: 0.4 #474747, stop:1 #414141);
+  border: 1px solid #1c1c1c;
+  border-radius: 2px;
+  font-family: "Menlo";
+  color: #808080;
+}
+
+QPushButton:pressed {
+  background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #363636, stop: 0.4 #222222, stop:1 #202020);  
+}

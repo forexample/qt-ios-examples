@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="qtios">
+        <!-- Style Sheets -->
+        <file>main.qss</file>
+
+        <!-- Images -->
+        <file>img/frame-background.png</file>
+    </qresource>
+</RCC>
+
