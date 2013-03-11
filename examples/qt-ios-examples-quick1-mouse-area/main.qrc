@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="qtios">
+        <file>main.qml</file>
+    </qresource>
+</RCC>
