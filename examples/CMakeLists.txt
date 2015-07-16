@@ -15,5 +15,3 @@
 add_subdirectory(qt-ios-examples-widgets-mouse-events)
 add_subdirectory(qt-ios-examples-widgets-touch-events)
 add_subdirectory(qt-ios-examples-widgets-stylesheets)
-
-add_subdirectory(qt-ios-examples-quick1-mouse-area)
