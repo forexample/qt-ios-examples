@@ -18,41 +18,6 @@ cmake_minimum_required(VERSION 3.0)
 
 project(qt-ios-examples)
 
-## ###################################################################
-##
-## ###################################################################
-
-option(IOS-DEVICE    "iOS device    build" OFF)
-option(IOS-SIMULATOR "iOS simulator build" OFF)
-
-if(IOS-DEVICE)
-  add_definitions("-DQ_OS_IOS")
-  add_definitions("-DQ_OS_IOS_DEVICE")
-endif(IOS-DEVICE)
-
-if(IOS-SIMULATOR)
-  add_definitions("-DQ_OS_IOS")
-  add_definitions("-DQ_OS_IOS_SIMULATOR")
-endif(IOS-SIMULATOR)
-
-## #################################################################
-##
-## #################################################################
-
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
-## #################################################################
-##
-## #################################################################
-
-mark_as_advanced(CMAKE_BUILD_TYPE)
-mark_as_advanced(CMAKE_INSTALL_PREFIX)
-mark_as_advanced(CMAKE_OSX_ARCHITECTURES)
-mark_as_advanced(CMAKE_OSX_DEPLOYMENT_TARGET)
-mark_as_advanced(CMAKE_OSX_SYSROOT)
-
 ## #################################################################
 ## Dependencies - Qt
 ## #################################################################
