@@ -12,7 +12,5 @@
 ##
 ######################################################################
 
-project(qt-ios-examples-widgets-stylesheets)
-
-add_executable(${PROJECT_NAME} MACOSX_BUNDLE main.mm main.qrc)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${qt_ios_extra_libs})
+add_executable(stylesheets MACOSX_BUNDLE main.mm main.qrc)
+target_link_libraries(stylesheets Qt5::Widgets ${qt_ios_extra_libs})

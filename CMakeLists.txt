@@ -62,4 +62,6 @@ set(
 ## Input
 ## #################################################################
 
-add_subdirectory(examples)
+add_subdirectory(mouse-events)
+add_subdirectory(stylesheets)
+add_subdirectory(touch-events)

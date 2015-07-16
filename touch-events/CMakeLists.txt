@@ -12,7 +12,5 @@
 ##
 ######################################################################
 
-project(qt-ios-examples-widgets-touch-events)
-
-add_executable(${PROJECT_NAME} MACOSX_BUNDLE main.mm)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${qt_ios_extra_libs})
+add_executable(touch_events MACOSX_BUNDLE main.mm)
+target_link_libraries(touch_events Qt5::Widgets ${qt_ios_extra_libs})

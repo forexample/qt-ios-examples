@@ -1,9 +1,7 @@
 # Qt on iOS examples
 
-A set of examples that run in both *desktop*, *simulator* and *device*
-configurations. See [this post]() for build instructions.
+* mouse events
+* touch events
+* stylesheets
 
-### Widgets examples
-
-- mouse events
-- touch events
+Originally from: https://github.com/jwintz/qt-ios-examples

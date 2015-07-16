@@ -12,7 +12,5 @@
 ##
 ######################################################################
 
-project(qt-ios-examples-widgets-mouse-events)
-
-add_executable(${PROJECT_NAME} MACOSX_BUNDLE main.mm)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${qt_ios_extra_libs})
+add_executable(mouse_events MACOSX_BUNDLE main.mm)
+target_link_libraries(mouse_events Qt5::Widgets ${qt_ios_extra_libs})
