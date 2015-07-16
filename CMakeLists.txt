@@ -1,15 +1,15 @@
 ### CMakeLists.txt ---
-## 
+##
 ## Author: Julien Wintz
 ## Created: Thu Mar  7 21:48:43 2013 (+0100)
-## Version: 
+## Version:
 ## Last-Updated: Fri Mar  8 00:30:56 2013 (+0100)
 ##           By: Julien Wintz
 ##     Update #: 16
 ######################################################################
-## 
+##
 ### Change Log:
-## 
+##
 ######################################################################
 
 cmake_minimum_required(VERSION 2.8.10)
@@ -19,7 +19,7 @@ cmake_minimum_required(VERSION 2.8.10)
 project(qt-ios-examples)
 
 ## ###################################################################
-## 
+##
 ## ###################################################################
 
 option(IOS-DEVICE    "iOS device    build" OFF)
@@ -36,7 +36,7 @@ if(IOS-SIMULATOR)
 endif(IOS-SIMULATOR)
 
 ## #################################################################
-## 
+##
 ## #################################################################
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -44,7 +44,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 ## #################################################################
-## 
+##
 ## #################################################################
 
 mark_as_advanced(CMAKE_BUILD_TYPE)
