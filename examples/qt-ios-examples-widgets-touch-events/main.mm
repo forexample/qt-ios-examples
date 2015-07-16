@@ -71,23 +71,23 @@ qtiosWidget::~qtiosWidget(void)
 bool qtiosWidget::event(QEvent *event)
 {
     if (event->type() == QEvent::TouchBegin) {
-	event->accept();
-	this->log->appendPlainText(QString("touch  begin: %1 point(s)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()));
-	return true;
+  event->accept();
+  this->log->appendPlainText(QString("touch  begin: %1 point(s)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()));
+  return true;
     }
 
     if (event->type() == QEvent::TouchUpdate) {
-	
-	int x = static_cast<QTouchEvent *>(event)->touchPoints().first().pos().x();
-	int y = static_cast<QTouchEvent *>(event)->touchPoints().first().pos().y();
 
-	this->log->appendPlainText(QString("touch update: %1 point(s) - (%2,%3)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()).arg(x).arg(y));
-	return true;
+  int x = static_cast<QTouchEvent *>(event)->touchPoints().first().pos().x();
+  int y = static_cast<QTouchEvent *>(event)->touchPoints().first().pos().y();
+
+  this->log->appendPlainText(QString("touch update: %1 point(s) - (%2,%3)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()).arg(x).arg(y));
+  return true;
     }
 
     if (event->type() == QEvent::TouchEnd) {
-	this->log->appendPlainText(QString("touch    end: %1 point(s)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()));
-	return true;
+  this->log->appendPlainText(QString("touch    end: %1 point(s)").arg(static_cast<QTouchEvent *>(event)->touchPoints().count()));
+  return true;
     }
 
     return QWidget::event(event);

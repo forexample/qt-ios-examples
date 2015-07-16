@@ -1,15 +1,15 @@
 ### CMakeLists.txt ---
-## 
+##
 ## Author: Julien Wintz, Ruslan Baratov
 ## Created: Thu Mar  7 21:57:34 2013 (+0100)
-## Version: 
+## Version:
 ## Last-Updated: Mon Mar 11 11:42:20 2013 (+0100)
 ##           By: Julien Wintz
 ##     Update #: 59
 ######################################################################
-## 
+##
 ### Change Log:
-## 
+##
 ######################################################################
 
 project(qt-ios-examples-widgets-stylesheets)

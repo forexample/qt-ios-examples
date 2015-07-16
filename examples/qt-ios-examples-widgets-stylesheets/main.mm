@@ -78,8 +78,9 @@ QString qtios_read_file(const QString& path)
     QString contents;
 
     QFile file(path);
-    if(file.open(QIODevice::ReadOnly))
-	contents = file.readAll();
+    if(file.open(QIODevice::ReadOnly)) {
+      contents = file.readAll();
+    }
 
     return contents;
 }
