@@ -62,6 +62,7 @@ set(
 ## Input
 ## #################################################################
 
+add_subdirectory(hellogl2)
 add_subdirectory(mouse-events)
 add_subdirectory(stylesheets)
 add_subdirectory(touch-events)
