@@ -13,4 +13,4 @@
 ######################################################################
 
 add_executable(stylesheets MACOSX_BUNDLE main.mm main.qrc)
-target_link_libraries(stylesheets Qt5::Widgets ${qt_ios_extra_libs})
+target_link_libraries(stylesheets Qt5::Widgets)

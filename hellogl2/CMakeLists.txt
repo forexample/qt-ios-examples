@@ -15,4 +15,4 @@ add_executable(
     window.h
 )
 
-target_link_libraries(hellogl2 Qt5::Widgets ${qt_ios_extra_libs})
+target_link_libraries(hellogl2 Qt5::Widgets)

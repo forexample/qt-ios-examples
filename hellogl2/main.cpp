@@ -41,6 +41,7 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QSurfaceFormat>
+#include <QtGlobal> // Q_OS_IOS
 
 #include "mainwindow.h"
 

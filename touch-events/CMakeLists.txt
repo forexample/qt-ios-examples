@@ -13,4 +13,4 @@
 ######################################################################
 
 add_executable(touch_events MACOSX_BUNDLE main.mm)
-target_link_libraries(touch_events Qt5::Widgets ${qt_ios_extra_libs})
+target_link_libraries(touch_events Qt5::Widgets)
