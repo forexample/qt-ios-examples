@@ -18,7 +18,7 @@ Download iOS toolchains from [Polly](https://github.com/ruslo/polly):
 
 Pick toolchain you need and build. For example `ios-8-4-armv7`:
 ```bash
-> cmake -H. -B_builds/ios-8-4-armv7 -GXcode -DCMAKE_TOOLCHAIN_FILE="${POLLY_ROOT}/ios-8-4-armv7" -DHUNTER_STATUS_DEBUG=ON
+> cmake -H. -B_builds/ios-8-4-armv7 -GXcode -DCMAKE_TOOLCHAIN_FILE="${POLLY_ROOT}/ios-8-4-armv7.cmake" -DHUNTER_STATUS_DEBUG=ON
 ```
 
 Same with `build.py` script:
