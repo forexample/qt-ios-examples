@@ -9,6 +9,8 @@ Originally from: https://github.com/jwintz/qt-ios-examples
 
 # Usage
 
+Build [patched](https://github.com/ruslo/hunter#notes-about-version-of-cmake) CMake version first (see [releases](https://github.com/ruslo/CMake/releases), e.g. [v3.3.2-p0](https://github.com/ruslo/CMake/releases/tag/v3.3.2-p0)).
+
 Download iOS toolchains from [Polly](https://github.com/ruslo/polly):
 
 ```bash
