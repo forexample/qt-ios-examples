@@ -6,6 +6,9 @@ find_package(Qt5Quick REQUIRED) # Qt5::Quick
 find_package(Qt5Qml REQUIRED) # Qt5::QmlQtQuick2Plugin
 find_package(Qt5Multimedia REQUIRED) # Qt5::QMultimediaDeclarativeModule
 
+# We should load this manually because of cyclic dependencies in Qt
+find_package(Qt5MultimediaWidgets REQUIRED)
+
 set(qt_conf "${CMAKE_CURRENT_LIST_DIR}/qt.conf")
 set(qml_dir "${CMAKE_CURRENT_BINARY_DIR}/qt_qml")
 
