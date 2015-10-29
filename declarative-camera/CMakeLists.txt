@@ -54,7 +54,12 @@ add_executable(
     ${qml_dir}
 )
 
-set_target_properties(declarative-camera PROPERTIES RESOURCE "${qt_conf};${qml_dir}")
+set_target_properties(
+    declarative-camera
+    PROPERTIES
+    XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "7.0"
+    RESOURCE "${qt_conf};${qml_dir}"
+)
 
 target_link_libraries(declarative-camera Qt5::Quick)
 
