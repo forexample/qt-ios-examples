@@ -57,7 +57,6 @@ add_executable(
 set_target_properties(
     declarative-camera
     PROPERTIES
-    XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "7.0"
     RESOURCE "${qt_conf};${qml_dir}"
 )
 
