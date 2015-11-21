@@ -58,6 +58,12 @@ set_target_properties(
     declarative-camera
     PROPERTIES
     RESOURCE "${qt_conf};${qml_dir}"
+    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_LIST_DIR}/plist.in"
+    XCODE_ATTRIBUTE_PRODUCT_NAME
+    "DeclarativeCameraExample"
+    XCODE_ATTRIBUTE_BUNDLE_IDENTIFIER
+    "com.github.forexample.qtiosexamples.declarativecamera"
+    XCODE_ATTRIBUTE_TARGETED_DEVICE_FAMILY "1,2" # iPhone/iPad
 )
 
 target_link_libraries(declarative-camera Qt5::Quick)
